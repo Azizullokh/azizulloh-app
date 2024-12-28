@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url(./image/photo_2024-12-28_16-34-46.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+button {
+    color: white;
+}
+
+.main {
+    display: flex;
+    padding: 100px;
+    align-items: start;
+    max-width: 1200px;
+    gap: 100px;
+    margin: auto;
+}
+
+input {
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 9px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 16px
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+select {
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 9px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    color: white;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: white;
+    padding: 4px;
+}
+
+option {
+    background-color: black;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    color: white;
+    resize: none;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+h3 {
+    color: white;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+span {
+    color: grey;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        background-position: center top;
+        background-attachment: fixed;
+    }
+    .main {
+        padding: 30px 20px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register {
+        width: 100%;
+        border: none;
+    }
+    .container {
+        width: 100%;
+        border: none;
+    }
+    input {
+        border: 1px solid black;
+        color: black;
+    }
+    select {
+        border: 1px solid black;
+        color: black;
+        font-weight: 800;
+    }
+    textarea {
+        border: 1px solid black;
+        color: black;
+    }
+     ::placeholder {
+        color: black;
+        font-weight: 800;
+    }
+}
